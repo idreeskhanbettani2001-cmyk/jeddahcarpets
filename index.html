@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeddah Carpets Center | جدہ کارپٹ سنٹر – Rugs &amp; Carpets, Rawalpindi</title>
+<meta name="description" content="Jeddah Carpets Center, Iqbal Rd, Naya Mohalla, Rawalpindi. Premium rugs, carpets, prayer mats, masjid carpets and flooring.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+<style>
+:root{
+ --teal:#0f3d3e;--teal-d:#092a2b;--teal-l:#1d5c5d;
+ --gold:#c9a24b;--gold-l:#e6cf8f;
+ --ivory:#faf6ee;--sand:#f1e9d9;--terra:#b5523b;
+ --ink:#1b2626;--muted:#667070;--line:#e6dfcf;--wa:#25d366;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--ivory);line-height:1.65}
+a{text-decoration:none;color:inherit}ul{list-style:none}button{font-family:inherit;cursor:pointer}
+.container{width:min(1240px,93%);margin:auto}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.18}
+.urdu{font-family:'Noto Nastaliq Urdu',serif}
+section{padding:84px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:.74rem;font-weight:600}
+.eyebrow::before,.eyebrow::after{content:"";width:28px;height:1px;background:var(--gold)}
+.sec-title{text-align:center;margin-bottom:46px}
+.sec-title h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--teal);margin:10px 0 8px}
+.sec-title p{color:var(--muted);max-width:560px;margin:auto}
+.btn{display:inline-block;background:var(--gold);color:var(--teal-d);padding:14px 34px;border:2px solid var(--gold);border-radius:50px;font-weight:600;font-size:.9rem;letter-spacing:.4px;transition:.3s}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn.dark{background:var(--teal);border-color:var(--teal);color:#fff}
+.btn.dark:hover{background:transparent;color:var(--teal)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.ghost:hover{background:#fff;color:var(--teal)}
+
+/* top bar */
+.util{background:var(--teal-d);color:#d8e4e0;font-size:.78rem}
+.util .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:9px 0}
+.util a:hover{color:var(--gold)}
+.util ul{display:flex;gap:22px}
+
+/* header */
+header.site{position:sticky;top:0;z-index:150;background:rgba(250,246,238,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:center;gap:24px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:46px;height:46px;border-radius:50%;background:var(--teal);display:grid;place-items:center;border:2px solid var(--gold)}
+.logo .mark svg{width:26px;height:26px}
+.logo b{display:block;font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--teal);line-height:1}
+.logo small{color:var(--gold);font-size:.82rem}
+.search{flex:1;max-width:480px;margin-left:auto;display:flex;background:#fff;border:1px solid var(--line);border-radius:50px;overflow:hidden}
+.search input{flex:1;border:0;padding:11px 20px;font-family:inherit;outline:0;font-size:.88rem;background:transparent}
+.search button{border:0;background:var(--teal);color:#fff;padding:0 22px;font-size:.85rem}
+.icons{display:flex;gap:16px}
+.icon-btn{position:relative;background:none;border:0;font-size:1.35rem;color:var(--teal)}
+.icon-btn span{position:absolute;top:-6px;right:-9px;background:var(--terra);color:#fff;font-size:.62rem;border-radius:50%;width:17px;height:17px;display:grid;place-items:center}
+.burger{display:none;background:none;border:0;font-size:1.7rem;color:var(--teal)}
+.navbar{border-top:1px solid var(--line)}
+.menu{display:flex;justify-content:center;gap:4px;flex-wrap:wrap}
+.menu>li{position:relative}
+.menu>li>a{display:block;padding:13px 16px;font-size:.86rem;font-weight:500}
+.menu>li:hover>a{color:var(--terra)}
+.sub{position:absolute;top:100%;left:0;background:#fff;min-width:210px;border-radius:0 0 10px 10px;box-shadow:0 16px 36px rgba(9,42,43,.15);border-top:2px solid var(--gold);opacity:0;visibility:hidden;transform:translateY(8px);transition:.25s}
+.menu>li:hover .sub{opacity:1;visibility:visible;transform:none}
+.sub a{display:block;padding:11px 20px;font-size:.84rem;color:var(--muted)}
+.sub a:hover{background:var(--ivory);color:var(--terra)}
+.ship{background:linear-gradient(90deg,var(--teal-d),var(--teal-l),var(--teal-d));color:var(--gold-l);text-align:center;font-size:.8rem;padding:8px;letter-spacing:.6px}
+
+/* hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden;color:#fff;background:var(--teal-d)}
+.hero .scene{position:absolute;inset:0;width:100%;height:100%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(95deg,rgba(9,42,43,.96) 0%,rgba(9,42,43,.82) 38%,rgba(9,42,43,.1) 75%)}
+.hero-in{position:relative;max-width:560px;padding:60px 0}
+.hero h1{font-size:clamp(2.6rem,6vw,4.7rem);margin:16px 0 18px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{color:#d3e0dc;font-size:1.05rem;margin-bottom:30px;max-width:470px}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero .rate{display:flex;gap:26px;margin-top:40px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18)}
+.hero .rate b{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--gold);display:block;line-height:1}
+.hero .rate small{color:#b7cac5;font-size:.78rem}
+.floor-rug{position:absolute;right:5%;bottom:-40px;width:min(520px,42vw);transform:perspective(900px) rotateX(62deg) rotateZ(-14deg);filter:drop-shadow(0 30px 30px rgba(0,0,0,.45));pointer-events:none}
+
+/* rug art */
+.rug{width:100%;height:100%;display:block}
+.art{display:grid;place-items:center;width:100%;height:100%;padding:8%}
+.art svg{max-height:100%;width:auto;max-width:100%;filter:drop-shadow(0 14px 14px rgba(40,25,10,.28))}
+
+/* strip */
+.strip{background:var(--teal);color:#fff;padding:26px 0}
+.strip .container{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.strip div{display:flex;gap:14px;align-items:center}
+.strip i{font-style:normal;font-size:1.8rem}
+.strip b{display:block;font-size:.92rem;color:var(--gold-l)}
+.strip small{color:#b7cac5;font-size:.8rem}
+
+/* categories */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.cat{position:relative;aspect-ratio:1/1.12;border-radius:18px;overflow:hidden;cursor:pointer;background:var(--sand);box-shadow:0 8px 24px rgba(9,42,43,.08)}
+.cat .art{transition:.6s}
+.cat:hover .art{transform:scale(1.1) rotate(-2deg)}
+.cat .lbl{position:absolute;left:0;right:0;bottom:0;padding:44px 20px 18px;color:#fff;background:linear-gradient(transparent,rgba(9,42,43,.92))}
+.cat h3{font-size:1.4rem}
+.cat span{font-size:.78rem;color:var(--gold-l);letter-spacing:1px}
+
+/* about */
+.about{background:linear-gradient(180deg,var(--sand),var(--ivory))}
+.about .container{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about .pics{position:relative;aspect-ratio:1/1}
+.about .pics>div{position:absolute;border-radius:20px;overflow:hidden;box-shadow:0 24px 50px rgba(9,42,43,.22)}
+.about .pics .a{inset:0 28% 22% 0;background:var(--teal)}
+.about .pics .b{inset:30% 0 0 34%;background:var(--gold-l);border:8px solid var(--ivory)}
+.about .badge{position:absolute;left:4%;bottom:6%;background:var(--terra);color:#fff;padding:16px 22px;border-radius:14px;text-align:center;box-shadow:0 12px 26px rgba(0,0,0,.25);z-index:3}
+.about .badge b{font-family:'Playfair Display',serif;font-size:2rem;display:block;line-height:1}
+.about h2{font-size:clamp(2rem,4vw,2.8rem);color:var(--teal);margin:12px 0 16px}
+.about p{color:var(--muted);margin-bottom:14px}
+.ticks{margin:20px 0 28px}
+.ticks li{padding-left:30px;position:relative;margin-bottom:9px;font-size:.93rem}
+.ticks li::before{content:"✓";position:absolute;left:0;width:20px;height:20px;border-radius:50%;background:var(--gold);color:var(--teal-d);font-size:.7rem;display:grid;place-items:center;top:4px;font-weight:700}
+
+/* products */
+.tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.tabs button{border:1px solid var(--line);background:#fff;padding:9px 22px;border-radius:50px;font-size:.86rem;color:var(--muted);transition:.25s}
+.tabs button.on,.tabs button:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.prod{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(9,42,43,.07);transition:.35s}
+.prod:hover{transform:translateY(-8px);box-shadow:0 20px 44px rgba(9,42,43,.16)}
+.prod .img{position:relative;aspect-ratio:1/1.1;background:radial-gradient(circle at 50% 40%,#fff,var(--sand));overflow:hidden}
+.prod .img .art{transition:.5s}
+.prod:hover .img .art{transform:scale(1.08)}
+.tag{position:absolute;top:14px;left:14px;z-index:3;background:var(--terra);color:#fff;font-size:.7rem;font-weight:600;padding:4px 11px;border-radius:30px}
+.heart{position:absolute;top:12px;right:12px;z-index:3;width:36px;height:36px;border-radius:50%;border:0;background:#fff;color:#bbb;font-size:1rem;box-shadow:0 3px 10px rgba(0,0,0,.14);transition:.25s}
+.heart.on,.heart:hover{color:var(--terra)}
+.quick{position:absolute;left:12px;right:12px;bottom:-60px;display:flex;gap:8px;transition:.3s;z-index:3}
+.prod:hover .quick{bottom:12px}
+.quick button{flex:1;border:0;border-radius:30px;background:var(--teal);color:#fff;padding:10px;font-size:.78rem;font-weight:500}
+.quick button:last-child{background:var(--wa)}
+.meta{padding:16px 18px 20px}
+.meta .cl{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);font-weight:600}
+.meta h3{font-size:1.12rem;margin:4px 0 8px;color:var(--teal)}
+.price{font-weight:600;color:var(--terra)}
+.price s{color:#a5a59c;font-weight:400;margin-right:8px;font-size:.86rem}
+.prod.hide{display:none}
+
+/* styles */
+.styles{background:var(--teal);color:#fff}
+.styles .sec-title h2{color:#fff}.styles .sec-title p{color:#b7cac5}
+.style-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.style{text-align:center;padding:28px 12px;border:1px solid rgba(201,162,75,.35);border-radius:16px;transition:.3s}
+.style:hover{background:rgba(255,255,255,.07);transform:translateY(-5px)}
+.style .sw{width:84px;height:84px;margin:0 auto 14px;border-radius:50%;overflow:hidden;border:3px solid var(--gold);background:var(--sand)}
+.style h4{font-size:1.2rem;color:var(--gold-l)}
+.style small{color:#b7cac5}
+
+/* masjid */
+.masjid{background:linear-gradient(180deg,var(--ivory),var(--sand))}
+
+/* banners */
+.banners{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.banner{position:relative;min-height:360px;border-radius:22px;overflow:hidden;display:flex;align-items:flex-end;color:#fff}
+.banner .bgart{position:absolute;inset:0}
+.banner .txt{position:relative;width:100%;padding:36px;background:linear-gradient(transparent,rgba(9,42,43,.94))}
+.banner h3{font-size:2rem;margin-bottom:6px}
+.banner p{color:#d3e0dc;font-size:.92rem;margin-bottom:16px;max-width:380px}
+
+/* tips */
+.tips{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.tips .pic{border-radius:24px;overflow:hidden;aspect-ratio:1/1;background:var(--sand);box-shadow:0 24px 50px rgba(9,42,43,.18)}
+.tips h2{font-size:clamp(2rem,4vw,2.7rem);color:var(--teal);margin:12px 0}
+.tips .step{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tips .step b{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold);min-width:36px}
+.tips .step span{font-size:.93rem;color:var(--muted)}
+.tips .step strong{color:var(--teal);display:block;font-size:.98rem}
+
+/* reviews */
+.rev{background:var(--teal-d);color:#fff;text-align:center}
+.rev h2{color:#fff;font-size:clamp(2rem,4vw,2.8rem);margin:10px 0}
+.rev .score{font-family:'Playfair Display',serif;font-size:5.5rem;color:var(--gold);line-height:1;margin-top:10px}
+.rev .stars{color:var(--gold);font-size:1.7rem;letter-spacing:6px;margin:8px 0}
+.rev p{color:#b7cac5;margin-bottom:24px}
+
+/* faq */
+.faq{max-width:860px;margin:auto}
+.faq .intro{text-align:center;color:var(--muted);margin-bottom:30px}
+.q{background:#fff;border-radius:14px;margin-bottom:12px;box-shadow:0 4px 14px rgba(9,42,43,.05);overflow:hidden}
+.q button{width:100%;text-align:left;background:none;border:0;padding:18px 24px;font-size:1rem;font-weight:500;color:var(--teal);display:flex;justify-content:space-between;gap:12px}
+.q button::after{content:"+";font-size:1.5rem;color:var(--gold);line-height:1}
+.q.open button::after{content:"–"}
+.q div{max-height:0;overflow:hidden;padding:0 24px;transition:.35s;color:var(--muted);font-size:.93rem}
+.q.open div{max-height:220px;padding-bottom:20px}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1.5fr;border-radius:24px;overflow:hidden;box-shadow:0 22px 56px rgba(9,42,43,.18)}
+.visit .info{background:var(--teal);color:#fff;padding:46px}
+.visit .info h2{font-size:2.2rem;margin-bottom:22px;color:#fff}
+.visit .row{display:flex;gap:16px;margin-bottom:20px;font-size:.93rem}
+.visit .row i{font-style:normal;width:42px;height:42px;border-radius:50%;background:rgba(201,162,75,.18);display:grid;place-items:center;font-size:1.1rem;flex-shrink:0}
+.visit .row b{display:block;color:var(--gold-l);font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase}
+.visit iframe{width:100%;height:100%;min-height:460px;border:0;display:block}
+.enq{margin-top:44px;background:#fff;border-radius:24px;padding:44px;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;box-shadow:0 10px 34px rgba(9,42,43,.08)}
+.enq h3{font-size:2rem;color:var(--teal);margin-bottom:8px}
+.enq p{color:var(--muted)}
+.enq form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.enq .full{grid-column:1/-1}
+.enq input,.enq select,.enq textarea{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:12px;font-family:inherit;font-size:.9rem;background:var(--ivory)}
+.enq input:focus,.enq select:focus,.enq textarea:focus{outline:2px solid var(--gold)}
+
+/* footer */
+footer{background:var(--teal-d);color:#b7cac5;padding:64px 0 0;font-size:.88rem}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:42px}
+footer h4{color:#fff;font-size:1.25rem;margin-bottom:14px}
+footer li{margin-bottom:9px}footer a:hover{color:var(--gold)}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding:18px 0;text-align:center;font-size:.78rem}
+
+/* drawer */
+.overlay{position:fixed;inset:0;background:rgba(9,42,43,.55);z-index:350;opacity:0;visibility:hidden;transition:.3s}
+.overlay.on{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:-440px;width:min(410px,100%);height:100%;background:var(--ivory);z-index:400;transition:.4s;display:flex;flex-direction:column;box-shadow:-12px 0 40px rgba(0,0,0,.25)}
+.drawer.open{right:0}
+.drawer .dh{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:var(--teal);color:#fff}
+.drawer .dh h3{font-size:1.4rem}
+.drawer .dh button{background:none;border:0;color:#fff;font-size:1.3rem}
+.drawer .body{flex:1;overflow:auto;padding:10px 24px}
+.drawer .item{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.drawer .th{width:58px;height:70px;border-radius:8px;background:var(--sand);flex-shrink:0;overflow:hidden}
+.drawer .item .t{flex:1;font-size:.88rem}
+.drawer .item button{background:none;border:0;color:var(--terra);font-size:1.1rem}
+.drawer .foot{padding:20px 24px;border-top:1px solid var(--line)}
+.drawer .foot a{display:block;text-align:center;background:var(--wa);border-color:var(--wa);color:#fff}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,90px);background:var(--teal-d);color:#fff;padding:12px 26px;border-radius:40px;font-size:.85rem;z-index:500;transition:.4s}
+.toast.on{transform:translate(-50%,0)}
+
+/* whatsapp sticky */
+.wa{position:fixed;right:20px;bottom:20px;z-index:300;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35);animation:pulse 2s infinite}
+.wa svg{width:34px;height:34px;fill:#fff}
+.wa-tip{position:fixed;right:94px;bottom:32px;z-index:300;background:#fff;padding:8px 16px;border-radius:22px;font-size:.8rem;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+.reveal{opacity:0;transform:translateY(32px);transition:.8s}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:1000px){
+ .cat-grid,.prod-grid{grid-template-columns:repeat(2,1fr)}
+ .style-grid{grid-template-columns:repeat(2,1fr)}
+ .about .container,.tips,.visit,.enq,.banners{grid-template-columns:1fr}
+ .strip .container{grid-template-columns:1fr 1fr}
+ .fgrid{grid-template-columns:1fr 1fr}
+ .floor-rug,.wa-tip{display:none}
+ .hero .shade{background:linear-gradient(180deg,rgba(9,42,43,.9),rgba(9,42,43,.8))}
+ .burger{display:block}
+ .navbar{display:none}.navbar.open{display:block}
+ .menu{flex-direction:column;gap:0;align-items:stretch}
+ .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding-left:14px}
+ .search{order:5;flex-basis:100%;max-width:none;margin:0}
+ .head{flex-wrap:wrap;gap:12px}
+ .icons{margin-left:auto}
+}
+@media(max-width:560px){section{padding:56px 0}.fgrid,.strip .container{grid-template-columns:1fr}.util ul{display:none}.enq form{grid-template-columns:1fr}.visit .info,.enq{padding:28px}}
+</style>
+</head>
+<body>
+
+<div class="util"><div class="container">
+ <ul><li><a href="#visit">Showroom</a></li><li><a href="#tips">Buying Guide</a></li><li><a href="#faq">FAQ</a></li></ul>
+ <div>📞 0311 5710269 &nbsp;·&nbsp; 🕗 Open · Closes 8 PM</div>
+</div></div>
+
+<header class="site">
+ <div class="container head">
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <a href="#home" class="logo">
+   <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="1.6"><rect x="4" y="4" width="16" height="16"/><rect x="4" y="4" width="16" height="16" transform="rotate(45 12 12)"/><circle cx="12" cy="12" r="3"/></svg></span>
+   <span><b>Jeddah Carpets Center</b><small class="urdu">جدہ کارپٹ سنٹر</small></span>
+  </a>
+  <div class="search"><input id="q" placeholder="Search rugs, carpets, prayer mats…"><button id="qbtn">Search</button></div>
+  <div class="icons">
+   <button class="icon-btn" id="wishBtn" title="Wishlist">♡<span id="wishCount">0</span></button>
+   <button class="icon-btn" id="cartBtn" title="Enquiry list">🛍<span id="cartCount">0</span></button>
+  </div>
+ </div>
+ <nav class="navbar" id="navbar"><div class="container"><ul class="menu">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#shop">Rugs ▾</a><div class="sub"><a href="#shop" data-go="persian">Persian Style</a><a href="#shop" data-go="turkish">Turkish Style</a></div></li>
+  <li><a href="#shop" data-go="carpet">Carpets</a></li>
+  <li><a href="#masjid">Masjid Carpets</a></li>
+  <li><a href="#shop" data-go="prayer">Prayer Rugs</a></li>
+  <li><a href="#shop" data-go="grass">Artificial Grass</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#visit">Contact</a></li>
+ </ul></div></nav>
+ <div class="ship">✦ Free delivery on large orders within Rawalpindi · Ask us on WhatsApp ✦</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home" style="padding:0">
+ <svg class="scene" viewBox="0 0 1200 640" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+  <defs>
+   <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9dcc2"/><stop offset="1" stop-color="#d7c6a4"/></linearGradient>
+   <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5a35"/><stop offset="1" stop-color="#5a3a20"/></linearGradient>
+   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6ee"/><stop offset="1" stop-color="#f6efdc"/></linearGradient>
+   <linearGradient id="sofa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d5c5d"/><stop offset="1" stop-color="#0f3d3e"/></linearGradient>
+  </defs>
+  <rect width="1200" height="440" fill="url(#wall)"/>
+  <rect y="440" width="1200" height="200" fill="url(#floor)"/>
+  <g stroke="#6e4527" stroke-width="2" opacity=".5"><line x1="0" y1="490" x2="1200" y2="490"/><line x1="0" y1="545" x2="1200" y2="545"/><line x1="0" y1="605" x2="1200" y2="605"/></g>
+  <rect y="425" width="1200" height="18" fill="#f4ecdb"/>
+  <!-- window -->
+  <rect x="640" y="70" width="260" height="300" rx="6" fill="#f4ecdb"/>
+  <rect x="654" y="84" width="232" height="272" fill="url(#sky)"/>
+  <path d="M654 300 q40 -50 80 -10 t100 -20 t52 40 v46 h-232z" fill="#a9c9a0" opacity=".7"/>
+  <line x1="770" y1="84" x2="770" y2="356" stroke="#f4ecdb" stroke-width="8"/><line x1="654" y1="220" x2="886" y2="220" stroke="#f4ecdb" stroke-width="8"/>
+  <path d="M610 60 h50 v330 q-25 -40 -50 0z" fill="#c9a24b" opacity=".9"/><path d="M880 60 h50 v330 q-25 -40 -50 0z" fill="#c9a24b" opacity=".9"/>
+  <!-- art frame -->
+  <rect x="960" y="110" width="150" height="190" rx="4" fill="#0f3d3e"/><rect x="972" y="122" width="126" height="166" fill="#e6cf8f"/>
+  <circle cx="1035" cy="205" r="42" fill="#b5523b"/><circle cx="1035" cy="205" r="22" fill="#faf6ee"/>
+  <!-- sofa -->
+  <rect x="680" y="330" width="460" height="120" rx="26" fill="url(#sofa)"/>
+  <rect x="700" y="285" width="420" height="90" rx="30" fill="#1d5c5d"/>
+  <rect x="660" y="350" width="60" height="110" rx="24" fill="#0f3d3e"/><rect x="1100" y="350" width="60" height="110" rx="24" fill="#0f3d3e"/>
+  <rect x="730" y="320" width="70" height="70" rx="14" fill="#c9a24b"/><rect x="1010" y="320" width="70" height="70" rx="14" fill="#b5523b"/>
+  <rect x="700" y="450" width="20" height="26" fill="#3b2412"/><rect x="1100" y="450" width="20" height="26" fill="#3b2412"/>
+  <!-- plant -->
+  <rect x="1130" y="380" width="46" height="62" rx="8" fill="#b5523b"/>
+  <g fill="#3f7d4f"><ellipse cx="1153" cy="340" rx="14" ry="48" transform="rotate(-18 1153 380)"/><ellipse cx="1153" cy="340" rx="14" ry="48" transform="rotate(18 1153 380)"/><ellipse cx="1153" cy="335" rx="13" ry="52"/></g>
+  <!-- lamp -->
+  <rect x="598" y="250" width="6" height="190" fill="#c9a24b"/><path d="M570 250 l60 0 l-14 -52 h-32z" fill="#f6e7b8"/>
+ </svg>
+ <div class="shade"></div>
+ <div class="floor-rug" id="heroRug"></div>
+ <div class="container"><div class="hero-in">
+  <span class="eyebrow" style="color:var(--gold)">Rawalpindi · Naya Mohalla</span>
+  <h1>Where Every Floor Becomes a <em>Masterpiece</em></h1>
+  <p>Handpicked rugs, carpets and flooring for homes, offices and masajid, chosen for beauty that lasts.</p>
+  <div class="btns"><a href="#shop" class="btn">Shop Collection</a><a href="#visit" class="btn ghost">Visit Showroom</a></div>
+  <div class="rate"><div><b>4.6★</b><small>Google rating</small></div><div><b>18+</b><small>Customer reviews</small></div><div><b>8 PM</b><small>Open till</small></div></div>
+ </div></div>
+</section>
+
+<div class="strip"><div class="container">
+ <div><i>🚚</i><span><b>Fast Delivery</b><small>Local &amp; city-wide</small></span></div>
+ <div><i>✨</i><span><b>Premium Quality</b><small>Carefully selected stock</small></span></div>
+ <div><i>📐</i><span><b>Size Guidance</b><small>Fit for every room</small></span></div>
+ <div><i>💬</i><span><b>WhatsApp Orders</b><small>Quick replies</small></span></div>
+</div></div>
+
+<!-- CATEGORIES -->
+<section id="cats"><div class="container">
+ <div class="sec-title reveal"><span class="eyebrow">Categories</span><h2>Shop by Category</h2><p>Everything for your floors, from statement rugs to prayer mats.</p></div>
+ <div class="cat-grid reveal" id="catGrid"></div>
+</div></section>
+
+<!-- ABOUT -->
+<section class="about" id="about"><div class="container">
+ <div class="pics reveal"><div class="a" id="aboutA"></div><div class="b" id="aboutB"></div><div class="badge"><b>4.6★</b><small>Google rating</small></div></div>
+ <div class="reveal">
+  <span class="eyebrow" style="padding-left:0">About Us</span>
+  <h2>Weaving Comfort &amp; Elegance Into Every Home</h2>
+  <p>Jeddah Carpets Center is a carpet store on Iqbal Road, Naya Mohalla, Rawalpindi, helping families, offices and masajid choose floor coverings they'll love for years.</p>
+  <p>Visit our showroom, see the colours in person, and let our team guide you on size, style and budget.</p>
+  <ul class="ticks"><li>Wide range of rugs, carpets and prayer mats</li><li>Friendly, honest advice with no pressure</li><li>Easy ordering and enquiries on WhatsApp</li></ul>
+  <a href="#visit" class="btn dark">Get In Touch</a>
+ </div>
+</div></section>
+
+<!-- PRODUCTS -->
+<section id="shop"><div class="container">
+ <div class="sec-title reveal"><span class="eyebrow">Our Collection</span><h2>Weekly Favourites</h2><p>Sample products and prices for demo purposes. Message us for current stock.</p></div>
+ <div class="tabs reveal" id="tabs">
+  <button class="on" data-t="all">All</button><button data-t="persian">Persian</button><button data-t="turkish">Turkish</button><button data-t="carpet">Carpets</button><button data-t="prayer">Prayer Rugs</button><button data-t="grass">Artificial Grass</button>
+ </div>
+ <div class="prod-grid reveal" id="prodGrid"></div>
+</div></section>
+
+<!-- STYLES -->
+<section class="styles"><div class="container">
+ <div class="sec-title reveal"><span class="eyebrow">Find Your Look</span><h2>Browse by Style</h2><p>Classic to contemporary: pick the mood for your room.</p></div>
+ <div class="style-grid reveal" id="styleGrid"></div>
+</div></section>
+
+<!-- MASJID -->
+<section class="masjid" id="masjid"><div class="container">
+ <div class="sec-title reveal"><span class="eyebrow">Masjid Carpets</span><h2>Prayer Hall &amp; Saf Collection</h2><p>Dense, comfortable carpets designed for masajid and community halls.</p></div>
+ <div class="prod-grid reveal" id="masjidGrid"></div>
+</div></section>
+
+<!-- BANNERS -->
+<section style="padding-top:0"><div class="container banners reveal">
+ <div class="banner"><div class="bgart" id="ban1"></div><div class="txt"><h3>Statement Rugs</h3><p>Anchor your living room with a rug that's made to be noticed.</p><a href="#shop" class="btn">Explore Rugs</a></div></div>
+ <div class="banner"><div class="bgart" id="ban2"></div><div class="txt"><h3>Evergreen Lawn Grass</h3><p>Fresh green all year, with no watering and no mowing.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/923115710269?text=Hello%2C%20I%20want%20artificial%20grass%20details">Ask on WhatsApp</a></div></div>
+</div></section>
+
+<!-- TIPS -->
+<section id="tips" style="background:var(--sand)"><div class="container tips">
+ <div class="pic reveal" id="tipPic"></div>
+ <div class="reveal">
+  <span class="eyebrow" style="padding-left:0">Buying Guide</span>
+  <h2>How to Choose the Perfect Rug</h2>
+  <div class="step"><b>01</b><span><strong>Measure first</strong>Leave a border of bare floor around the rug.</span></div>
+  <div class="step"><b>02</b><span><strong>Match your colours</strong>Pick shades that sit well with walls and furniture.</span></div>
+  <div class="step"><b>03</b><span><strong>Think about traffic</strong>Busy rooms need a dense, easy-clean pile.</span></div>
+  <div class="step"><b>04</b><span><strong>See it in daylight</strong>Visit the showroom to judge true colour and texture.</span></div>
+  <br><a href="#visit" class="btn dark">Ask Our Experts</a>
+ </div>
+</div></section>
+
+<!-- REVIEWS -->
+<section class="rev"><div class="container reveal">
+ <span class="eyebrow">Customer Love</span>
+ <h2>Trusted by Our Neighbours</h2>
+ <div class="score">4.6</div><div class="stars">★★★★★</div>
+ <p>Based on 18 Google reviews</p>
+ <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/search?q=Jeddah+Carpets+Center+%D8%AC%D8%AF%DB%81+%DA%A9%D8%A7%D8%B1%D9%BE%D9%B9+%D8%B3%D9%86%D9%B9%D8%B1">Read Google Reviews</a>
+</div></section>
+
+<!-- FAQ -->
+<section id="faq"><div class="container faq">
+ <div class="sec-title reveal"><span class="eyebrow">Good to Know</span><h2>Rugs &amp; Carpets in Rawalpindi</h2></div>
+ <p class="intro reveal">Jeddah Carpets Center helps homes, offices and masajid find floor coverings that balance comfort, durability and style.</p>
+ <div class="reveal" id="faqList">
+  <div class="q open"><button>What's the difference between a rug and a carpet?</button><div>A rug is a finished piece for a defined area of a room. A carpet usually covers the whole floor or is cut from a roll to fit.</div></div>
+  <div class="q"><button>Can I order through WhatsApp?</button><div>Yes. Tap the green WhatsApp button, share the design or size you want, and we'll confirm availability and price.</div></div>
+  <div class="q"><button>Do you offer custom sizes?</button><div>Many designs can be arranged in other sizes. Share your room measurements and we'll advise.</div></div>
+  <div class="q"><button>Do you supply carpets for masajid?</button><div>Yes. Send your hall dimensions and preferred colours and we'll suggest suitable saf carpets.</div></div>
+  <div class="q"><button>How do I care for my rug?</button><div>Vacuum gently without a hard rotating brush, blot spills quickly instead of rubbing, and get it professionally washed when needed.</div></div>
+ </div>
+</div></section>
+
+<!-- VISIT -->
+<section id="visit" style="padding-top:0"><div class="container">
+ <div class="sec-title reveal"><span class="eyebrow">Find Us</span><h2>Visit Our Showroom</h2></div>
+ <div class="visit reveal">
+  <div class="info">
+   <h2>Jeddah Carpets Center</h2>
+   <div class="row"><i>📍</i><div><b>Address</b>J376+9W6, Iqbal Rd, Naya Mohalla, Rawalpindi, 46000</div></div>
+   <div class="row"><i>📞</i><div><b>Phone / WhatsApp</b><a href="tel:+923115710269">0311 5710269</a></div></div>
+   <div class="row"><i>🕗</i><div><b>Hours</b>Open · Closes 8 PM</div></div>
+   <div class="row"><i>⭐</i><div><b>Google Rating</b>4.6 from 18 reviews</div></div>
+   <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=J376%2B9W6+Iqbal+Rd+Naya+Mohalla+Rawalpindi">Get Directions</a>
+  </div>
+  <iframe loading="lazy" title="Jeddah Carpets Center map" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=J376%2B9W6%20Iqbal%20Rd%20Naya%20Mohalla%20Rawalpindi&output=embed"></iframe>
+ </div>
+ <div class="enq reveal">
+  <div><h3>Send an Enquiry</h3><p>Tell us what you're looking for and we'll reply on WhatsApp with options and prices.</p></div>
+  <form id="enqForm">
+   <input id="fn" placeholder="Your name" required><input id="fp" type="tel" placeholder="Phone number" required>
+   <select id="fi" class="full"><option>Rugs</option><option>Carpets</option><option>Prayer Rugs</option><option>Masjid Carpets</option><option>Artificial Grass</option><option>Flooring</option></select>
+   <textarea id="fm" class="full" rows="3" placeholder="Room size, colours, budget…"></textarea>
+   <button class="btn dark full" type="submit">Send on WhatsApp</button>
+  </form>
+ </div>
+</div></section>
+
+<footer><div class="container">
+ <div class="fgrid">
+  <div><h4>Jeddah Carpets Center</h4><p>Premium rugs, carpets and flooring in Rawalpindi, Pakistan.</p><p class="urdu" style="color:var(--gold);margin:10px 0">جدہ کارپٹ سنٹر</p><p>📍 Iqbal Rd, Naya Mohalla, Rawalpindi<br>📞 0311 5710269</p></div>
+  <div><h4>Shop</h4><ul><li><a href="#shop">Rugs</a></li><li><a href="#shop">Carpets</a></li><li><a href="#masjid">Masjid Carpets</a></li><li><a href="#shop">Prayer Rugs</a></li></ul></div>
+  <div><h4>Help</h4><ul><li><a href="#tips">Buying Guide</a></li><li><a href="#faq">FAQ</a></li><li><a href="#visit">Contact</a></li></ul></div>
+  <div><h4>Follow</h4><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li></ul></div>
+ </div>
+ <div class="copy">© <span id="yr"></span> Jeddah Carpets Center. All rights reserved. · Demo concept: product names and prices are samples</div>
+</div></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer">
+ <div class="dh"><h3 id="dTitle">Enquiry List</h3><button id="dClose">✕</button></div>
+ <div class="body" id="dBody"></div>
+ <div class="foot" id="dFoot"><a class="btn" id="sendCart" target="_blank" rel="noopener">Send List on WhatsApp</a></div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<a class="wa" href="https://wa.me/923115710269?text=Hello%20Jeddah%20Carpets%20Center%2C%20I%20want%20to%20know%20about%20your%20rugs%20and%20carpets." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+ <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.8 1.5 5.9 1.5 6.9 0 12.6-5.6 12.6-12.5S22.900 3 16 3zm0 22.900c-1.900 0-3.700-.5-5.300-1.500l-.4-.2-4.400 1.100 1.200-4.300-.3-.4a10.300 10.300 0 0 1-1.600-5.500C5.200 9.800 10 5.200 16 5.200s10.800 4.600 10.800 10.300S22 25.900 16 25.900zm5.900-7.700c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.700 8.700 0 0 1-4.300-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.200 1.100-1.200 2.800s1.200 3.300 1.400 3.500 2.400 3.700 5.800 5.100c2.100.9 2.900 1 4 .8.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.4z"/></svg>
+</a>
+<div class="wa-tip">💬 Chat with us</div>
+
+<script>
+const WA="923115710269";
+const fmt=n=>"Rs "+n.toLocaleString("en-PK");
+let uid=0;
+
+/* ---------- Procedural artwork (original SVG) ---------- */
+const PAL={
+ ruby:{bg:"#7b1e2b",b1:"#d4af5f",b2:"#3b0d14",m1:"#d4af5f",m2:"#f1e3c0",m3:"#3b0d14"},
+ navy:{bg:"#14305a",b1:"#e7d6a5",b2:"#0a1b35",m1:"#e7d6a5",m2:"#c9a24b",m3:"#0a1b35"},
+ teal:{bg:"#0f4c4a",b1:"#d9b866",b2:"#082d2c",m1:"#d9b866",m2:"#f1e3c0",m3:"#082d2c"},
+ camel:{bg:"#b98a56",b1:"#fff1d6",b2:"#6b4423",m1:"#fff1d6",m2:"#7a4f2a",m3:"#6b4423"},
+ plum:{bg:"#4b2a63",b1:"#e6c875",b2:"#27143a",m1:"#e6c875",m2:"#f2e4c0",m3:"#27143a"},
+ grey:{bg:"#8f8a84",b1:"#f3efe8",b2:"#4a4642",m1:"#f3efe8",m2:"#5d5852",m3:"#4a4642"},
+ ivory:{bg:"#efe6d3",b1:"#b98a3e",b2:"#8a6a30",m1:"#b98a3e",m2:"#4f7f7a",m3:"#8a6a30"},
+ terra:{bg:"#b5523b",b1:"#f2dcb3",b2:"#6a2a1b",m1:"#f2dcb3",m2:"#6a2a1b",m3:"#6a2a1b"},
+ green:{bg:"#1f5a3c",b1:"#e6c875",b2:"#0e3320",m1:"#e6c875",m2:"#f1e3c0",m3:"#0e3320"}
+};
+function rug(pn,w=300,h=400){
+ const c=PAL[pn],i=++uid;
+ let fr="";
+ for(let x=22;x<=278;x+=8){fr+=`<line x1="${x}" y1="0" x2="${x}" y2="26" /><line x1="${x}" y1="374" x2="${x}" y2="400"/>`}
+ let petals="";for(let k=0;k<8;k++)petals+=`<ellipse cx="150" cy="200" rx="9" ry="46" fill="${c.m2}" opacity=".9" transform="rotate(${k*45} 150 200) translate(0 -38)"/>`;
+ let drops="";for(let k=0;k<6;k++){drops+=`<circle cx="${150}" cy="${200-100}" r="0"/>`}
+ return `<svg viewBox="0 0 ${w} ${h}" class="rug" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <pattern id="lat${i}" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M11 2 L20 11 L11 20 L2 11Z" fill="none" stroke="${c.m1}" stroke-width="1" opacity=".35"/><circle cx="11" cy="11" r="1.6" fill="${c.m1}" opacity=".45"/></pattern>
+  <pattern id="bd${i}" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M8 1 L15 8 L8 15 L1 8Z" fill="${c.b2}"/><circle cx="8" cy="8" r="2.4" fill="${c.b1}"/></pattern>
+  <pattern id="wv${i}" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="none"/><path d="M0 0L4 4M4 0L0 4" stroke="#000" stroke-width=".4" opacity=".08"/></pattern>
+ </defs>
+ <g stroke="#f4ecdb" stroke-width="2.2" opacity=".95">${fr}</g>
+ <rect x="14" y="26" width="272" height="348" rx="3" fill="${c.bg}"/>
+ <rect x="14" y="26" width="272" height="348" rx="3" fill="url(#bd${i})" opacity=".0"/>
+ <rect x="22" y="34" width="256" height="332" fill="none" stroke="${c.b1}" stroke-width="3"/>
+ <rect x="30" y="42" width="240" height="316" fill="url(#bd${i})" opacity=".0"/>
+ <g>
+  <rect x="30" y="42" width="240" height="22" fill="url(#bd${i})"/><rect x="30" y="336" width="240" height="22" fill="url(#bd${i})"/>
+  <rect x="30" y="64" width="22" height="272" fill="url(#bd${i})"/><rect x="248" y="64" width="22" height="272" fill="url(#bd${i})"/>
+ </g>
+ <rect x="52" y="64" width="196" height="272" fill="${c.bg}"/>
+ <rect x="52" y="64" width="196" height="272" fill="url(#lat${i})"/>
+ <rect x="52" y="64" width="196" height="272" fill="none" stroke="${c.b1}" stroke-width="2"/>
+ <g fill="${c.m1}" opacity=".85">
+  <path d="M52 64 q50 0 50 50 q-50 0 -50 -50z"/><path d="M248 64 q-50 0 -50 50 q50 0 50 -50z"/>
+  <path d="M52 336 q50 0 50 -50 q-50 0 -50 50z"/><path d="M248 336 q-50 0 -50 -50 q50 0 50 50z"/>
+ </g>
+ <g transform="translate(0 0)">
+  <ellipse cx="150" cy="200" rx="70" ry="104" fill="${c.m3}" opacity=".55"/>
+  <ellipse cx="150" cy="200" rx="62" ry="96" fill="none" stroke="${c.m1}" stroke-width="2.5"/>
+  <polygon points="150,112 200,200 150,288 100,200" fill="${c.m1}"/>
+  <polygon points="150,126 188,200 150,274 112,200" fill="${c.bg}"/>
+  ${petals}
+  <circle cx="150" cy="200" r="22" fill="${c.m1}"/><circle cx="150" cy="200" r="15" fill="${c.m3}"/><circle cx="150" cy="200" r="7" fill="${c.m2}"/>
+ </g>
+ <rect x="14" y="26" width="272" height="348" fill="url(#wv${i})"/>
+ </svg>`;
+}
+function saf(pn){
+ const c=PAL[pn],i=++uid;
+ let arches="";
+ for(let r=0;r<2;r++)for(let k=0;k<3;k++){
+  const x=34+k*88,y=40+r*168;
+  arches+=`<path d="M${x} ${y+130} v-70 q0 -50 36 -62 q36 12 36 62 v70z" fill="${c.m3}" opacity=".6" stroke="${c.m1}" stroke-width="2.5"/>
+  <path d="M${x+14} ${y+130} v-62 q0 -34 22 -44 q22 10 22 44 v62z" fill="${c.bg}" stroke="${c.m1}" stroke-width="1.5"/>
+  <circle cx="${x+36}" cy="${y+54}" r="6" fill="${c.m1}"/>`;
+ }
+ return `<svg viewBox="0 0 300 400" class="rug" xmlns="http://www.w3.org/2000/svg">
+ <defs><pattern id="s${i}" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M7 1 L13 7 L7 13 L1 7Z" fill="none" stroke="${c.m1}" stroke-width=".8" opacity=".35"/></pattern></defs>
+ <rect x="10" y="10" width="280" height="380" rx="3" fill="${c.bg}"/><rect x="10" y="10" width="280" height="380" fill="url(#s${i})"/>
+ <rect x="20" y="20" width="260" height="360" fill="none" stroke="${c.b1}" stroke-width="3"/>
+ <rect x="28" y="28" width="244" height="344" fill="none" stroke="${c.b1}" stroke-width="1"/>
+ ${arches}
+ </svg>`;
+}
+function prayer(pn){
+ const c=PAL[pn],i=++uid;
+ return `<svg viewBox="0 0 300 400" class="rug" xmlns="http://www.w3.org/2000/svg">
+ <defs><pattern id="p${i}" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M7 1 L13 7 L7 13 L1 7Z" fill="none" stroke="${c.m1}" stroke-width=".8" opacity=".4"/></pattern></defs>
+ <rect x="20" y="20" width="260" height="360" rx="3" fill="${c.bg}"/><rect x="20" y="20" width="260" height="360" fill="url(#p${i})"/>
+ <rect x="30" y="30" width="240" height="340" fill="none" stroke="${c.b1}" stroke-width="3"/>
+ <rect x="40" y="40" width="220" height="320" fill="none" stroke="${c.b1}" stroke-width="1"/>
+ <path d="M70 340 v-170 q0 -90 80 -118 q80 28 80 118 v170z" fill="${c.m3}" opacity=".65" stroke="${c.m1}" stroke-width="3"/>
+ <path d="M92 340 v-160 q0 -66 58 -90 q58 24 58 90 v160z" fill="${c.bg}" stroke="${c.m1}" stroke-width="2"/>
+ <circle cx="150" cy="120" r="14" fill="${c.m1}"/><circle cx="150" cy="120" r="7" fill="${c.m3}"/>
+ <g fill="${c.m1}" opacity=".9"><path d="M150 200 l10 16 l-10 16 l-10 -16z"/><circle cx="150" cy="260" r="6"/><circle cx="150" cy="284" r="4"/></g>
+ </svg>`;
+}
+function grass(){
+ let b="";for(let k=0;k<150;k++){const x=Math.random()*280+10,y=Math.random()*360+20,l=14+Math.random()*16,t=(Math.random()-.5)*10;b+=`<path d="M${x} ${y} q${t} -${l/2} ${t*1.6} -${l}" stroke="${["#2d7a46","#3f9a5a","#1f5a3c","#58b36f"][k%4]}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`}
+ return `<svg viewBox="0 0 300 400" class="rug" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="280" height="380" rx="8" fill="#2a6e41"/><rect x="10" y="10" width="280" height="380" rx="8" fill="none" stroke="#0e3320" stroke-width="3"/>${b}</svg>`;
+}
+function art(kind,pn){
+ const s=kind==="saf"?saf(pn):kind==="prayer"?prayer(pn):kind==="grass"?grass():rug(pn);
+ return `<div class="art">${s}</div>`;
+}
+
+/* ---------- Data ---------- */
+const products=[
+ {id:1,n:"Amber Court Persian Rug",c:"persian",l:"Persian Style",pn:"ruby",p:21500,o:27000,s:"4×6 ft"},
+ {id:2,n:"Midnight Medallion Rug",c:"persian",l:"Persian Style",pn:"navy",p:18900,o:23000,s:"3×5 ft"},
+ {id:3,n:"Bosphorus Ivory Rug",c:"turkish",l:"Turkish Style",pn:"ivory",p:16400,o:19500,s:"4×5.5 ft"},
+ {id:4,n:"Anatolia Terracotta Rug",c:"turkish",l:"Turkish Style",pn:"terra",p:14800,s:"3×5 ft"},
+ {id:5,n:"Royal Plum Living Carpet",c:"carpet",l:"Carpets",pn:"plum",p:32000,o:38500,s:"6×9 ft"},
+ {id:6,n:"Stone Grey Modern Carpet",c:"carpet",l:"Carpets",pn:"grey",p:28500,s:"6×9 ft"},
+ {id:7,n:"Emerald Garden Prayer Rug",c:"prayer",l:"Prayer Rugs",pn:"green",k:"prayer",p:2800,o:3400,s:"Standard"},
+ {id:8,n:"Desert Sand Prayer Rug",c:"prayer",l:"Prayer Rugs",pn:"camel",k:"prayer",p:2400,s:"Standard"},
+ {id:9,n:"Evergreen Lawn Turf",c:"grass",l:"Artificial Grass",pn:"green",k:"grass",p:140,o:170,s:"per sq ft"},
+ {id:10,n:"Heritage Camel Rug",c:"persian",l:"Persian Style",pn:"camel",p:24600,o:29000,s:"4×6 ft"},
+ {id:11,n:"Peacock Teal Rug",c:"turkish",l:"Turkish Style",pn:"teal",p:19800,s:"5×7 ft"},
+ {id:12,n:"Burgundy Hall Carpet",c:"carpet",l:"Carpets",pn:"ruby",p:35500,o:41000,s:"8×10 ft"}
+];
+const masjid=[
+ {id:101,n:"Noor Green Saf Carpet",l:"Masjid Carpets",pn:"green",k:"saf",s:"Custom roll"},
+ {id:102,n:"Mehrab Maroon Saf Carpet",l:"Masjid Carpets",pn:"ruby",k:"saf",s:"Custom roll"},
+ {id:103,n:"Haram Blue Saf Carpet",l:"Masjid Carpets",pn:"navy",k:"saf",s:"Custom roll"},
+ {id:104,n:"Sahn Teal Saf Carpet",l:"Masjid Carpets",pn:"teal",k:"saf",s:"Custom roll"}
+];
+const all=[...products,...masjid];
+let cart=[],wish=[];
+
+/* ---------- Render ---------- */
+function card(p){
+ const off=p.o?Math.round((1-p.p/p.o)*100):0;
+ return `<div class="prod" data-c="${p.c||'masjid'}" data-n="${p.n.toLowerCase()}">
+ <div class="img">${off?`<span class="tag">-${off}%</span>`:""}
+  <button class="heart ${wish.includes(p.id)?'on':''}" data-id="${p.id}" title="Wishlist">♥</button>
+  ${art(p.k||"rug",p.pn)}
+  <div class="quick"><button data-add="${p.id}">+ Enquiry</button><button data-wa="${p.id}">WhatsApp</button></div>
+ </div>
+ <div class="meta"><div class="cl">${p.l} · ${p.s}</div><h3>${p.n}</h3>
+ <div class="price">${p.p?(p.o?`<s>${fmt(p.o)}</s>`:"")+fmt(p.p):"Ask for price"}</div></div></div>`;
+}
+function render(){
+ prodGrid.innerHTML=products.map(card).join("");
+ masjidGrid.innerHTML=masjid.map(card).join("");
+ applyFilter();
+}
+document.getElementById("heroRug").innerHTML=rug("ruby");
+catGrid.innerHTML=[
+ ["Carpets","Explore →",art("rug","plum"),"carpet"],["Rugs","Explore →",art("rug","navy"),"persian"],
+ ["Prayer Rugs","Explore →",art("prayer","green"),"prayer"],["Masjid Carpets","Explore →",art("saf","ruby"),""],
+ ["Turkish Style","Explore →",art("rug","terra"),"turkish"],["Persian Style","Explore →",art("rug","ruby"),"persian"],
+ ["Artificial Grass","Explore →",art("grass","green"),"grass"],["Modern Grey","Explore →",art("rug","grey"),"carpet"]
+].map(x=>`<div class="cat" ${x[3]?`data-go="${x[3]}"`:'onclick="location.hash=\'#masjid\'"'}>${x[2]}<div class="lbl"><h3>${x[0]}</h3><span>${x[1]}</span></div></div>`).join("");
+styleGrid.innerHTML=[["Classic","Traditional / Rich","ruby"],["Heritage","Medallion / Bold","navy"],["Soft Ivory","Light / Airy","ivory"],["Earthy","Warm / Natural","camel"],["Modern","Clean / Muted","grey"]]
+ .map(s=>`<div class="style"><div class="sw">${art("rug",s[2])}</div><h4>${s[0]}</h4><small>${s[1]}</small></div>`).join("");
+aboutA.innerHTML=art("rug","teal");aboutB.innerHTML=art("rug","ivory");
+ban1.innerHTML=`<div style="background:linear-gradient(135deg,#7b1e2b,#3b0d14);height:100%">${art("rug","ruby")}</div>`;
+ban2.innerHTML=`<div style="background:linear-gradient(135deg,#1f5a3c,#0e3320);height:100%">${art("grass","green")}</div>`;
+tipPic.innerHTML=art("rug","navy");
+
+/* ---------- Filtering ---------- */
+let tab="all",term="";
+function applyFilter(){document.querySelectorAll("#prodGrid .prod").forEach(el=>{
+ el.classList.toggle("hide",!((tab==="all"||el.dataset.c===tab)&&el.dataset.n.includes(term)))})}
+function setTab(t){tab=t;document.querySelectorAll("#tabs button").forEach(x=>x.classList.toggle("on",x.dataset.t===t));applyFilter()}
+tabs.addEventListener("click",e=>{const b=e.target.closest("button");if(b)setTab(b.dataset.t)});
+document.querySelectorAll("[data-go]").forEach(el=>el.addEventListener("click",()=>{setTab(el.dataset.go);shop.scrollIntoView({behavior:"smooth"})}));
+function doSearch(){term=q.value.trim().toLowerCase();setTab("all");shop.scrollIntoView({behavior:"smooth"})}
+qbtn.onclick=doSearch;q.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch()});
+
+/* ---------- Cart / wishlist ---------- */
+function toast(t){toastEl=document.getElementById("toast");toastEl.textContent=t;toastEl.classList.add("on");setTimeout(()=>toastEl.classList.remove("on"),1900)}
+document.body.addEventListener("click",e=>{
+ const h=e.target.closest(".heart");
+ if(h){const id=+h.dataset.id;wish=wish.includes(id)?wish.filter(x=>x!==id):[...wish,id];
+  document.querySelectorAll(`.heart[data-id="${id}"]`).forEach(x=>x.classList.toggle("on",wish.includes(id)));wishCount.textContent=wish.length;return}
+ const a=e.target.closest("[data-add]");
+ if(a){cart.push(all.find(x=>x.id==a.dataset.add));cartCount.textContent=cart.length;toast("Added to enquiry list");return}
+ const w=e.target.closest("[data-wa]");
+ if(w){const p=all.find(x=>x.id==w.dataset.wa);window.open(`https://wa.me/${WA}?text=${encodeURIComponent("Hello, I am interested in: "+p.n)}`,"_blank")}
+});
+let mode="cart";
+function openDrawer(m){
+ mode=m;const list=m==="cart"?cart:all.filter(p=>wish.includes(p.id));
+ dTitle.textContent=m==="cart"?"Enquiry List":"Wishlist";
+ dBody.innerHTML=list.length?list.map((p,i)=>`<div class="item"><div class="th">${art(p.k||"rug",p.pn)}</div><div class="t"><b>${p.n}</b><br><small>${p.p?fmt(p.p):"Ask for price"}</small></div><button data-rm="${i}">✕</button></div>`).join(""):"<p style='padding:36px 0;color:#888;text-align:center'>Nothing here yet.</p>";
+ sendCart.href=`https://wa.me/${WA}?text=`+encodeURIComponent("Hello Jeddah Carpets Center, I'm interested in:\n"+list.map(p=>"• "+p.n).join("\n"));
+ dFoot.style.display=list.length?"block":"none";
+ drawer.classList.add("open");overlay.classList.add("on");
+}
+const closeDrawer=()=>{drawer.classList.remove("open");overlay.classList.remove("on")};
+cartBtn.onclick=()=>openDrawer("cart");wishBtn.onclick=()=>openDrawer("wish");dClose.onclick=closeDrawer;overlay.onclick=closeDrawer;
+dBody.addEventListener("click",e=>{
+ const r=e.target.closest("[data-rm]");if(!r)return;const i=+r.dataset.rm;
+ if(mode==="cart"){cart.splice(i,1);cartCount.textContent=cart.length}
+ else{const id=all.filter(p=>wish.includes(p.id))[i].id;wish=wish.filter(x=>x!==id);wishCount.textContent=wish.length;render()}
+ openDrawer(mode);
+});
+
+/* ---------- Misc UI ---------- */
+faqList.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const qq=b.parentElement;
+ document.querySelectorAll(".q").forEach(x=>{if(x!==qq)x.classList.remove("open")});qq.classList.toggle("open")});
+burger.onclick=()=>navbar.classList.toggle("open");
+document.querySelectorAll(".menu a").forEach(a=>a.addEventListener("click",()=>navbar.classList.remove("open")));
+enqForm.addEventListener("submit",e=>{e.preventDefault();
+ const t=`Hello Jeddah Carpets Center,\nName: ${fn.value}\nPhone: ${fp.value}\nInterest: ${fi.value}\nMessage: ${fm.value}`;
+ window.open(`https://wa.me/${WA}?text=${encodeURIComponent(t)}`,"_blank")});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+document.getElementById("yr").textContent=new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
